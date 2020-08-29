@@ -8,11 +8,15 @@
 #spring.datasource.driver-class-name=org.sqlite.JDBC
 
 
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8081/auth/user
 spring:
   application:
     name: bike
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/bike_local
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/bike_local?useSSL=false
     username: root
     password: root
   jpa:

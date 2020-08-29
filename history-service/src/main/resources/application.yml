@@ -1,0 +1,15 @@
+
+security:
+  oauth2:
+   resource:
+      userInfoUri: http://localhost:8081/auth/user
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
+
+server:
+  port: 8083
